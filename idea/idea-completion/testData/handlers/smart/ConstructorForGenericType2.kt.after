@@ -1,14 +1,14 @@
-fun registerHandler(handler: Handler<out Message>) {}
+fun registerHandler(handler: Handler<out Message1>) {}
 
 fun test() {
-    registerHandler(object : Handler<Message> {
-        override fun handle(e: Message) {
+    registerHandler(object : Handler<Message1> {
+        override fun handle(e: Message1) {
             TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
         }
     })
 }
 
-interface Message
+interface Message1
 
 interface Handler<E> {
     fun handle(e: E)
